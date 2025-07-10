@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(26, 24, 24)
+    }
+
+    .container {
+      text-align: center;
+      border: 3px solid black;
+      border-radius: 15px;
+      box-shadow: 0 0 10px;
+      background-color: white;
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Simple Calculator</h1>
+    <input id="num1" type="number" placeholder="Enter number 1">
+    <input id="num2" type="number" placeholder="Enter number 2">
+    <br><br>
+    <button onclick="calculate('+')">Add</button>
+    <button onclick="calculate('-')">Subtract</button>
+    <button onclick="calculate('*')">Multiply</button>
+    <button onclick="calculate('/')">Divide</button> <br><br>
+    <button onclick="clearDisplay()" class="clear">Clear</button>
+
+    <h2>Result: <span id="result">0</span></h2>
+  </div>
+
+  <script>
+    function calculate(op) {
+      let num1 = parseFloat(document.getElementById('num1').value);
+      let num2 = parseFloat(document.getElementById('num2').value);
+      let result = 0;
+
+      if (op === '+') result = num1 + num2;
+      else if (op === '-') result = num1 - num2;
+      else if (op === '*') result = num1 * num2;
+      else if (op === '/') result = num1 / num2;
+
+
+      document.getElementById('result').innerText = result;
+    }
+    function clearDisplay() {
+      document.getElementById("num1").value = "";
+      document.getElementById("num2").value = "";
+      document.getElementById('result').innerText = "0";
+
+    }
+  </script>
+</body>
+
+</html>__

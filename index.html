@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Portfolio - Madiha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #f1f1f1;
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        header h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        header:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: scale(1.01);
+            box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .section:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 12px 28px rgba(0, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .section h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .Skills {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .Skills:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 12px 28px rgba(0, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .Skills h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .Interests {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .Interests:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 12px 28px rgba(0, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .Interests h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .section p,
+        li {
+            font-size: 1rem;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #6a11cb;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .Email {
+            text-decoration: underline;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        .resume-btn {
+            background: linear-gradient(to right, #0ef, #00bcd4);
+            color: #081b29;
+            border: none;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .resume-btn:hover {
+            background: #0ef;
+            box-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+            transform: scale(1.05);
+            color: #081b29;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hi, I'm Syed Madiha Banu</h1>
+        <p>Front-End Learner 👨‍💻 | Creative Thinker🎨</p>
+        <a class="btn resume-btn" href="Resume.pdf" download>⬇️ Download Resume</a>
+
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>👋 About Me</h2>
+            <p>Hello! I'm Syed Madiha Banu,a passionate BCA student interested in Web Develpoment and Technology. <br>
+                I enjoy building User-friendly Web pages and continuosly learning new things in programming. <br>
+                My curiosity and Logical thinking Keep me motivated to grow in this field
+
+            </p>
+        </div>
+        <!-- Skills and Interests Section -->
+        <section class="Skills">
+            <h2>🛠️ Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+        <section class="Interests">
+            <h2>💻Interests</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>programming</li>
+                <li>problem-solving</li>
+            </ul>
+        </section>
+        <!-- project section -->
+        <div class="section">
+            <h2>💡 Projects</h2>
+            <ul>
+                <li>
+                    <h3>⏰Digital Clock :</h3>
+
+                    <p>A live Digital Clock built using HTML,CSS,and JavaScript.It displays the current time and Updates
+                        every
+                        second . <br>This project helped me understand how to work with the real-time data in Web
+                        Development </p>
+                    <a href="DigitalClock.html">View project</a>
+                </li>
+                <li>
+                    <h3>📄Simple Calculator : </h3>
+
+                    <p>This is a basic Calculator created using HTML and JavaScript.It allows User to perform Simple
+                        Arithmetic
+                        operations like Addition Substraction,Multiplication , Division</p>
+                    <a href="calculator.html">View project</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📞 Contact Me</h2>
+            <a class="btn" href="https://github.com/MADIHASYED919" target="_blank">🌐 View on GitHub</a> <br>
+            <a class="btn" href="https://www.linkedin.com/in/madiha-syed-b59142368" target="_blank">🌐 View on
+                LinkedIn</a>
+
+        </div>
+    </div>
+
+    <footer>
+        @ 2025 Madiha — Crafted with 💻 & ☕
+    </footer>
+
+</body>
+
+</html>
